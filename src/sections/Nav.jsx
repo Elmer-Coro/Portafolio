@@ -1,49 +1,50 @@
-import React, { useState, useEffect } from "react";
-import { CgDarkMode } from "react-icons/cg";
+import React, { useState } from "react";
 import DarkModeToggle from "../components/DarkModeToggle";
 
 export default function Nav() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [currentPage, setCurrentPage] = useState("inicio");
 
-  useEffect(() => {
-    // Puedes personalizar la lógica de cambio de tema según tus necesidades
-    if (darkMode) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
-  }, [darkMode]);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
   };
 
   return (
-    <nav className='bg-mgh max-w-[1200px] mx-auto p-8 flex items-center justify-between'>
+    <nav className='max-w-[1200px] mx-auto p-8 flex items-center justify-between'>
       <div className='text-2xl font-bold'>
         <a
-          href='#'
-          className='text-blue-900'>
+          href='#inicio'
+          className={`text-blue-900 ${
+            currentPage === "inicio" ? "active" : ""
+          }`}
+          onClick={() => handlePageChange("inicio")}>
           &lt;&gt;MasterDev&lt;/&gt;
         </a>
       </div>
       <div className='flex items-center space-x-5'>
-        <ul className='flex space-x-4 font-semibold text-sm text-blue-700'>
+        <ul className='sm:hidden flex space-x-4 font-semibold text-sm text-blue-700'>
           <li>
             <a
-              href='#'
-              className=''>
+              href='#inicio'
+              className={`${currentPage === "inicio" ? "active" : ""}`}
+              onClick={() => handlePageChange("inicio")}>
               Inicio
             </a>
           </li>
           <li>
-            <a href='#'>Sobre mi</a>
+            <a
+              href='#proyectos'
+              className={`${currentPage === "proyectos" ? "active" : ""}`}
+              onClick={() => handlePageChange("proyectos")}>
+              Proyectos
+            </a>
           </li>
           <li>
-            <a href='#'>Proyectos</a>
-          </li>
-          <li>
-            <a href='#'>Habilidades</a>
+            <a
+              href='#habilidades'
+              className={`${currentPage === "habilidades" ? "active" : ""}`}
+              onClick={() => handlePageChange("habilidades")}>
+              Habilidades
+            </a>
           </li>
         </ul>
         <DarkModeToggle />

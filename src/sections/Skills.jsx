@@ -9,7 +9,9 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Skills() {
   return (
-    <section className='max-w-[1200px] m-auto py-20 px-8'>
+    <section
+      id='habilidades'
+      className='max-w-[1200px] m-auto py-20 px-8'>
       <h2 className='font-bold text-blue-900 text-center text-3xl mb-8'>
         HABILIDADES
       </h2>

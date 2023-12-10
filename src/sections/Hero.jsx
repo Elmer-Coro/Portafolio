@@ -5,10 +5,10 @@ import Blur from "../components/Blur";
 
 export default function Hero() {
   return (
-    <header className='sm:grid-cols-1 relative pt-8 grid grid-cols-2 items-center gap-8 max-w-[1200px] m-auto py-20 px-8 '>
+    <header
+      id='inicio'
+      className='sm:grid-cols-1 relative pt-8 grid grid-cols-2 items-center gap-8 max-w-[1200px] m-auto py-20 px-8 '>
       <div className='sm:order-2 content'>
-        {/* <Blur />
-        <Blur /> */}
         <h4 className='mb-4 text-slate-800 text-base font-semibold'>
           CODEANDO EL FUTURO, PIXEL POR PIXEL
         </h4>

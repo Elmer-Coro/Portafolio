@@ -7,7 +7,10 @@ export default function Footer() {
     <footer className='md:grid-cols-2 text-white relative grid grid-cols-4 gap-8 max-w-[1200px] m-auto py-20 px-8 text-sm '>
       <div className='column'>
         <div className='max-w-[100px] mb-8 font-bold text-2xl'>
-          &lt;&gt;MasterDev&lt;/&gt;
+          <img
+            src={logo}
+            alt=''
+          />
         </div>
         <p className='mb-8'>
           Construyendo experiencias digitales excepcionales.
