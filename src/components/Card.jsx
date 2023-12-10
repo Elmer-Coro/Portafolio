@@ -5,22 +5,32 @@ import { FaHeart } from "react-icons/fa";
 
 export default function Card({ text, paragraph, img }) {
   return (
-    <div className='rounded-md p-3 bg-white shadow-dm shadow-zinc-300 border'>
-      <Technologies />
-      <h4 className='mb-2 text-slate-900 text-xl font-bold '>{text}</h4>
-      <p className=' mb-4 text-slate-700'>{paragraph}</p>
-      <div className='mb-2'>
-        <img
-          src={img}
-          alt='snake'
-        />
-      </div>
-      <div className='flex mt-auto justify-between items-center'>
-        <a
-          className='text-violet-500 font-semibold flex items-center gap-2'
-          href='https://elmer-coro.github.io/memory-game/src/'>
-          Visitar web <FaArrowRight />
-        </a>
+    <div className='max-w-sm  border rounded-xl overflow-hidden shadow-md'>
+      <img
+        className='w-full h-48 object-cover object-center'
+        src={img}
+        alt='{title}'
+      />
+      <div className='p-4'>
+        <h2 className='text-xl text-blue-900 font-semibold mb-2'>{text}</h2>
+        <p className='text-gray-600 mb-4'>Html, Css, Javsscript</p>
+        <p className='text-gray-800'>{paragraph}</p>
+        <div className='mt-4 flex justify-between'>
+          <a
+            href='{websiteLink}'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-blue-900 hover:underline'>
+            Visitar Sitio
+          </a>
+          <a
+            href='{githubLink}'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-gray-500 hover:underline'>
+            GitHub
+          </a>
+        </div>
       </div>
     </div>
   );

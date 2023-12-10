@@ -10,7 +10,7 @@ import quizApp from "../../public/images/quizApp.png";
 export default function Proyectos() {
   return (
     <section className='max-w-[1200px] m-auto py-20 px-8'>
-      <h2 className='font-bold text-slate-900 text-center text-2xl'>
+      <h2 className='font-bold text-blue-900 text-center text-3xl'>
         PROYECTOS
       </h2>
       <div className='sm:grid-cols-1 md:grid-cols-2 mt-16 grid grid-cols-3 gap-8'>

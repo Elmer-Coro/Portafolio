@@ -9,13 +9,17 @@ import Skills from "./sections/Skills";
 
 function App() {
   return (
-    <div className=''>
-      <Nav />
-      <Hero />
+    <div>
+      <div className='bg-mgh'>
+        <Nav />
+        <Hero />
+      </div>
       <Proyectos />
       <Skills />
-      <Footer />
-      <Copyright />
+      <div className='bg-blue-900'>
+        <Footer />
+        <Copyright />
+      </div>
     </div>
   );
 }

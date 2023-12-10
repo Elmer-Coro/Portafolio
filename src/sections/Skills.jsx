@@ -10,7 +10,7 @@ import { FaGithub } from "react-icons/fa";
 export default function Skills() {
   return (
     <section className='max-w-[1200px] m-auto py-20 px-8'>
-      <h2 className='font-bold text-slate-900 text-center text-2xl mb-16'>
+      <h2 className='font-bold text-blue-900 text-center text-3xl mb-8'>
         HABILIDADES
       </h2>
       <p className='mb-4 text-center text-slate-600 font-normal'>
@@ -20,7 +20,7 @@ export default function Skills() {
         habilidades sólidas en JavaScript, CSS y HTML, y he aplicado esta
         experiencia en una amplia gama de proyectos emocionantes.
       </p>
-      <div className='grid place-items-center place-content-center gap-4 grid-cols-7 sm:grid-cols-3'>
+      <div className='grid place-items-center place-content-center gap-4 grid-cols-7 sm:grid-cols-3 py-20'>
         <div className='text-5xl text-red-500 hover:animate-bounce'>
           <FaHtml5 />
         </div>
