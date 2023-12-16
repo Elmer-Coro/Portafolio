@@ -22,26 +22,26 @@ export default function Skills() {
         habilidades sólidas en JavaScript, CSS y HTML, y he aplicado esta
         experiencia en una amplia gama de proyectos emocionantes.
       </p>
-      <div className='grid place-items-center place-content-center gap-4 grid-cols-7 sm:grid-cols-3 py-20'>
-        <div className='text-5xl text-red-500 hover:animate-bounce'>
+      <div className='grid place-items-center place-content-center gap-4 grid-cols-7 py-20'>
+        <div className='md:text-4xl text-3xl text-red-500 hover:animate-bounce'>
           <FaHtml5 />
         </div>
-        <div className='text-5xl text-blue-500 hover:animate-bounce'>
+        <div className='lg:text-5xl md:text-4xl  text-3xl text-blue-500 hover:animate-bounce'>
           <FaCss3 />
         </div>
-        <div className='text-5xl text-yellow-400 hover:animate-bounce'>
+        <div className='lg:text-5xl md:text-4xl  text-3xl text-yellow-400 hover:animate-bounce'>
           <IoLogoJavascript />
         </div>
-        <div className='text-5xl text-sky-600 hover:animate-bounce'>
+        <div className='lg:text-5xl md:text-4xl  text-3xl text-sky-600 hover:animate-bounce'>
           <FaReact />
         </div>
-        <div className='text-5xl text-sky-400 hover:animate-bounce'>
+        <div className='lg:text-5xl md:text-4xl  text-3xl text-sky-400 hover:animate-bounce'>
           <SiTailwindcss />
         </div>
-        <div className='text-5xl text-pink-500 hover:animate-bounce'>
+        <div className='lg:text-5xl md:text-4xl  text-3xl text-pink-500 hover:animate-bounce'>
           <FaBootstrap />
         </div>
-        <div className='text-5xl hover:animate-bounce'>
+        <div className='lg:text-5xl md:text-4xl  text-3xl hover:animate-bounce'>
           <FaGithub />
         </div>
       </div>

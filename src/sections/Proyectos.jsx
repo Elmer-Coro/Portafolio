@@ -15,7 +15,7 @@ export default function Proyectos() {
       <h2 className='font-bold text-blue-900 text-center text-3xl'>
         PROYECTOS
       </h2>
-      <div className='sm:grid-cols-1 md:grid-cols-2 mt-16 grid grid-cols-3 gap-8'>
+      <div className='grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 grid gap-8'>
         <Card
           text={"Snake"}
           paragraph={

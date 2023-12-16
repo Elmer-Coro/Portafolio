@@ -10,7 +10,7 @@ export default function Nav() {
 
   return (
     <nav className='max-w-[1200px] mx-auto p-8 flex items-center justify-between'>
-      <div className='text-2xl font-bold'>
+      <div className='text-1xl sm:text-2xl font-bold'>
         <a
           href='#inicio'
           className={`text-blue-900 ${
@@ -21,7 +21,7 @@ export default function Nav() {
         </a>
       </div>
       <div className='flex items-center space-x-5'>
-        <ul className='sm:hidden flex space-x-4 font-semibold text-sm text-blue-700'>
+        <ul className='lg:flex hidden space-x-4 font-semibold text-sm text-blue-700'>
           <li>
             <a
               href='#inicio'

@@ -1,18 +1,17 @@
 import React from "react";
 import programing from "../../public/images/programming.svg";
 import Button from "../components/Button";
-import Blur from "../components/Blur";
 
 export default function Hero() {
   return (
     <header
       id='inicio'
-      className='sm:grid-cols-1 relative pt-8 grid grid-cols-2 items-center gap-8 max-w-[1200px] m-auto py-20 px-8 '>
-      <div className='sm:order-2 content'>
+      className='relative pt-8 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-[1200px] m-auto py-20 px-8 '>
+      <div className='order-2 content md:order-1'>
         <h4 className='mb-4 text-slate-800 text-base font-semibold'>
           CODEANDO EL FUTURO, PIXEL POR PIXEL
         </h4>
-        <h1 className='mb-4 text-blue-900 text-5xl font-bold'>
+        <h1 className='mb-4 text-blue-900 text-4xl sm:text-5xl font-bold'>
           Hola, soy <span>Elmer</span>, desarrollador web
         </h1>
         <p className='mb-8 text-slate-700 '>
