@@ -12,56 +12,62 @@ export default function Footer() {
             alt=''
           />
         </div>
-        <p className='mb-8'>
+        <p className='mb-8 dark:text-gray-400'>
           Construyendo experiencias digitales excepcionales.
         </p>
         <Socials />
       </div>
       <div className='column'>
-        <h4 className='mb-8 text-xl font-semibold'>Personal</h4>
+        <h4 className='mb-8 text-xl font-semibold dark:text-gray-300'>
+          Personal
+        </h4>
         <a
-          className='block mb-4'
+          className='block mb-4 dark:text-gray-400'
           href='https://elmer-coro.github.io/Blog/'>
           Blog
         </a>
       </div>
       <div className='column'>
-        <h4 className='mb-8 text-xl font-semibold'>Proyectos</h4>
+        <h4 className='mb-8 text-xl font-semibold dark:text-gray-300'>
+          Proyectos
+        </h4>
         <a
-          className='block mb-4 '
+          className='dark:text-gray-400 block mb-4 '
           href='#'>
           Memory Game
         </a>
         <a
-          className='block mb-4 '
+          className='dark:text-gray-400 block mb-4 '
           href='#'>
           Gallery Project
         </a>
         <a
-          className='block mb-4 '
+          className='dark:text-gray-400 block mb-4 '
           href='#'>
           Calculator
         </a>
         <a
-          className='block mb-4 '
+          className='dark:text-gray-400 block mb-4 '
           href='#'>
           dessert Page
         </a>
       </div>
       <div className='column'>
-        <h4 className='mb-8 text-xl font-medium'>Contacto</h4>
+        <h4 className='mb-8 text-xl font-medium dark:text-gray-300'>
+          Contacto
+        </h4>
         <a
-          className='block mb-4 '
+          className='dark:text-gray-400 block mb-4 '
           href='#'>
           Linkedin
         </a>
         <a
-          className='block mb-4 '
+          className='dark:text-gray-400 block mb-4 '
           href='#'>
           GitHub
         </a>
         <a
-          className='block mb-4 '
+          className='dark:text-gray-400 block mb-4 '
           href='#'>
           Instagram
         </a>

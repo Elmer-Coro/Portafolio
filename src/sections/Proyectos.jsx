@@ -12,7 +12,7 @@ export default function Proyectos() {
     <section
       id='proyectos'
       className='max-w-[1200px] m-auto py-20 px-8'>
-      <h2 className='font-bold text-blue-900 text-center text-3xl'>
+      <h2 className='dark:text-gray-300 font-bold text-blue-900 text-center text-3xl'>
         PROYECTOS
       </h2>
       <div className='grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 grid gap-8'>

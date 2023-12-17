@@ -9,13 +9,15 @@ import Skills from "./sections/Skills";
 function App() {
   return (
     <div>
-      <div className='bg-mgh'>
+      <div className='bg-mgh dark:bg-slate-900'>
         <Nav />
         <Hero />
       </div>
-      <Proyectos />
-      <Skills />
-      <div className='bg-blue-900'>
+      <div className='dark:bg-slate-900'>
+        <Proyectos />
+        <Skills />
+      </div>
+      <div className='dark:bg-slate-900 bg-blue-900'>
         <Footer />
         <Copyright />
       </div>

@@ -12,10 +12,10 @@ export default function Skills() {
     <section
       id='habilidades'
       className='max-w-[1200px] m-auto py-20 px-8'>
-      <h2 className='font-bold text-blue-900 text-center text-3xl mb-8'>
+      <h2 className='dark:text-gray-300 font-bold text-blue-900 text-center text-3xl mb-8'>
         HABILIDADES
       </h2>
-      <p className='mb-4 text-center text-slate-600 font-normal'>
+      <p className='dark:text-gray-400 mb-4 text-center text-slate-600 font-normal'>
         Mi viaje en el mundo del desarrollo web ha estado marcado por la
         dedicación a la excelencia, la creatividad y la búsqueda constante de
         soluciones innovadoras. A lo largo de mi carrera, he cultivado
@@ -41,7 +41,7 @@ export default function Skills() {
         <div className='lg:text-5xl md:text-4xl  text-3xl text-pink-500 hover:animate-bounce'>
           <FaBootstrap />
         </div>
-        <div className='lg:text-5xl md:text-4xl  text-3xl hover:animate-bounce'>
+        <div className='lg:text-5xl md:text-4xl  text-3xl hover:animate-bounce dark:text-white'>
           <FaGithub />
         </div>
       </div>

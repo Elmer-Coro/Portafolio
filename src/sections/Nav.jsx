@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DarkModeToggle from "../components/DarkModeToggle";
+import { DarkModeSwitch } from "../components/DarkModeSwitch";
 
 export default function Nav() {
   const [currentPage, setCurrentPage] = useState("inicio");
@@ -13,7 +14,7 @@ export default function Nav() {
       <div className='text-1xl sm:text-2xl font-bold'>
         <a
           href='#inicio'
-          className={`text-blue-900 ${
+          className={`text-blue-900 dark:text-gray-400 ${
             currentPage === "inicio" ? "active" : ""
           }`}
           onClick={() => handlePageChange("inicio")}>
@@ -21,11 +22,13 @@ export default function Nav() {
         </a>
       </div>
       <div className='flex items-center space-x-5'>
-        <ul className='lg:flex hidden space-x-4 font-semibold text-sm text-blue-700'>
+        <ul className='lg:flex hidden space-x-4 font-semibold text-sm text-blue-700 dark:text-gray-400'>
           <li>
             <a
               href='#inicio'
-              className={`${currentPage === "inicio" ? "active" : ""}`}
+              className={`hover:text-blue-800 dark:hover:text-gray-600 ${
+                currentPage === "inicio" ? "active" : ""
+              }`}
               onClick={() => handlePageChange("inicio")}>
               Inicio
             </a>
@@ -33,7 +36,9 @@ export default function Nav() {
           <li>
             <a
               href='#proyectos'
-              className={`${currentPage === "proyectos" ? "active" : ""}`}
+              className={`hover:text-blue-800 dark:hover:text-gray-600 ${
+                currentPage === "proyectos" ? "active" : ""
+              }`}
               onClick={() => handlePageChange("proyectos")}>
               Proyectos
             </a>
@@ -41,13 +46,15 @@ export default function Nav() {
           <li>
             <a
               href='#habilidades'
-              className={`${currentPage === "habilidades" ? "active" : ""}`}
+              className={`hover:text-blue-800 dark:hover:text-gray-600 ${
+                currentPage === "habilidades" ? "active" : ""
+              }`}
               onClick={() => handlePageChange("habilidades")}>
               Habilidades
             </a>
           </li>
         </ul>
-        <DarkModeToggle />
+        <DarkModeSwitch />
       </div>
     </nav>
   );
