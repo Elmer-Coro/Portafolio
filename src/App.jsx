@@ -1,4 +1,5 @@
 import React from "react";
+import "@fontsource/roboto";
 import Nav from "./sections/Nav";
 import Hero from "./sections/Hero";
 import Proyectos from "./sections/Proyectos";

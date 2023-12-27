@@ -6,6 +6,7 @@ import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import Icon from "../components/Icon";
 
 export default function Skills() {
   return (
@@ -23,27 +24,23 @@ export default function Skills() {
         experiencia en una amplia gama de proyectos emocionantes.
       </p>
       <div className='grid place-items-center place-content-center gap-4 grid-cols-7 py-20'>
-        <div className='md:text-4xl text-3xl text-red-500 hover:animate-bounce'>
-          <FaHtml5 />
-        </div>
-        <div className='lg:text-5xl md:text-4xl  text-3xl text-blue-500 hover:animate-bounce'>
-          <FaCss3 />
-        </div>
-        <div className='lg:text-5xl md:text-4xl  text-3xl text-yellow-400 hover:animate-bounce'>
-          <IoLogoJavascript />
-        </div>
-        <div className='lg:text-5xl md:text-4xl  text-3xl text-sky-600 hover:animate-bounce'>
-          <FaReact />
-        </div>
-        <div className='lg:text-5xl md:text-4xl  text-3xl text-sky-400 hover:animate-bounce'>
-          <SiTailwindcss />
-        </div>
-        <div className='lg:text-5xl md:text-4xl  text-3xl text-pink-500 hover:animate-bounce'>
-          <FaBootstrap />
-        </div>
-        <div className='lg:text-5xl md:text-4xl  text-3xl hover:animate-bounce dark:text-white'>
-          <FaGithub />
-        </div>
+        <Icon icon={<FaHtml5 className='text-gray-400 hover:text-red-500' />} />
+        <Icon icon={<FaCss3 className='text-gray-400 hover:text-blue-500' />} />
+        <Icon
+          icon={
+            <IoLogoJavascript className='text-gray-400 hover:text-yellow-500' />
+          }
+        />
+        <Icon
+          icon={<FaReact className='text-gray-400 hover:text-blue-600' />}
+        />
+        <Icon
+          icon={<SiTailwindcss className='text-gray-400 hover:text-blue-400' />}
+        />
+        <Icon
+          icon={<FaBootstrap className='text-gray-400 hover:text-pink-500' />}
+        />
+        <Icon icon={<FaGithub className='text-gray-400 hover:text-black' />} />
       </div>
     </section>
   );

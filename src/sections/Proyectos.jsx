@@ -15,18 +15,21 @@ export default function Proyectos() {
       <h2 className='dark:text-gray-300 font-bold text-blue-900 text-center text-3xl'>
         PROYECTOS
       </h2>
-      <div className='grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 grid gap-8'>
+      <div className='grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 mt-16 grid gap-8'>
         <Card
           text={"Snake"}
           paragraph={
             "'Snake', una interpretación moderna del clásico juego de la serpiente, desarrollado con pasión y creatividad utilizando JavaScript. Este emocionante juego combina la nostalgia del pasado con la emoción del presente"
           }
           img={snake}
+          websiteLink='https://elmer-coro.github.io/Snake/'
         />
         <Card
           text='Memory Game'
           paragraph='El proyecto "Memory Game - Desafía tu Memoria" es una emocionante recreación digital del clásico juego de mesa que pondrá a prueba tus habilidades de concentración y memoria.'
           img={memoryGame}
+          websiteLink='https://elmer-coro.github.io/memory-game/src/'
+          githubLink='https://github.com/Elmer-Coro/memory-game'
         />
         <Card
           text='Gallery Project'

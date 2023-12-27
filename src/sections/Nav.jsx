@@ -14,15 +14,16 @@ export default function Nav() {
       <div className='text-1xl sm:text-2xl font-bold'>
         <a
           href='#inicio'
-          className={`text-blue-900 dark:text-gray-400 ${
+          className={`text-blue-800 dark:text-gray-400 ${
             currentPage === "inicio" ? "active" : ""
           }`}
           onClick={() => handlePageChange("inicio")}>
-          &lt;&gt;MasterDev&lt;/&gt;
+          <span>&lt;&gt;</span> MasterDev
+          <span>&lt;/&gt;</span>
         </a>
       </div>
       <div className='flex items-center space-x-5'>
-        <ul className='lg:flex hidden space-x-4 font-semibold text-sm text-blue-700 dark:text-gray-400'>
+        <ul className='lg:flex hidden space-x-4 font-semibold text-sm text-blue-500 dark:text-gray-400'>
           <li>
             <a
               href='#inicio'
