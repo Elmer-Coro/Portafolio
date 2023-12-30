@@ -1,7 +1,5 @@
 import React from "react";
-import Technologies from "./Technologies";
-import { FaArrowRight } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa";
+import { SvgGithub, SvgLink } from "../icons/Icons";
 
 export default function Card({
   text,
@@ -9,38 +7,39 @@ export default function Card({
   img,
   websiteLink,
   githubLink,
+  cols,
+  tamaño,
 }) {
   return (
-    <div className='max-w-sm  border rounded-xl overflow-hidden shadow-md dark:bg-slate-800 dark:border-slate-700'>
-      <img
-        className='w-full h-48 object-cover object-center'
-        src={img}
-        alt='{title}'
-      />
+    <div
+      className={`h-[28em] border border-white/20 rounded-2xl overflow-hidden relative hover:scale-105 transition-all duration-500 ease-in-out ${cols}`}>
+      <div className='blur-sm absolute top-0 z-[-2] h-full w-full  bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]' />
+
       <div className='p-4'>
-        <h2 className='dark:text-gray-300 text-xl text-blue-900 font-semibold mb-2'>
-          {text}
-        </h2>
-        <p className='dark:text-gray-500 text-gray-600 mb-4'>
-          Html, Css, Javsscript
-        </p>
-        <p className='text-gray-800 dark:text-gray-400 opacity-75'>
+        <h2 className='text-white/80 text-xl font-extrabold mb-2'>{text}</h2>
+        <p className='text-white/30 mb-4'>Html | Css | Javsscript</p>
+        <p className='text-white/70 font-light text-pretty text-sm mb-4'>
           {paragraph}
         </p>
+        <img
+          className={`w-full h-48 object-fill rounded-lg ${tamaño}`}
+          src={img}
+          alt='{title}'
+        />
         <div className='mt-4 flex justify-between'>
           <a
             href={websiteLink}
             target='_blank'
             rel='noopener noreferrer'
             className='dark:text-blue-500 text-blue-900 hover:underline'>
-            Visitar Sitio
+            <SvgLink />
           </a>
           <a
             href={githubLink}
             target='_blank'
             rel='noopener noreferrer'
             className='text-gray-500 hover:underline'>
-            GitHub
+            <SvgGithub />
           </a>
         </div>
       </div>

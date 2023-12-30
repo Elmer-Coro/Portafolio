@@ -9,19 +9,17 @@ import Skills from "./sections/Skills";
 
 function App() {
   return (
-    <div>
-      <div className='bg-mgh dark:bg-slate-900'>
-        <Nav />
-        <Hero />
-      </div>
-      <div className='dark:bg-slate-900'>
-        <Proyectos />
-        <Skills />
-      </div>
-      <div className='dark:bg-slate-900 bg-blue-900'>
-        <Footer />
-        <Copyright />
-      </div>
+    <div className='relative'>
+      <div className='absolute top-0 z-[-2] h-full w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]' />
+
+      <Nav />
+      <Hero />
+
+      <Proyectos />
+      <Skills />
+
+      <Footer />
+      <Copyright />
     </div>
   );
 }

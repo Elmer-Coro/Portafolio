@@ -8,13 +8,14 @@ export default function Hero() {
       id='inicio'
       className='relative pt-8 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-[1200px] m-auto py-20 px-8 '>
       <div className='order-2 content md:order-1'>
-        <h4 className='mb-4 text-slate-800 text-base font-semibold dark:text-gray-400'>
+        <h4 className='mb-4 text-white/70 md:text-sm text-base font-semibold '>
           CODEANDO EL FUTURO, PIXEL POR PIXEL
         </h4>
-        <h1 className='mb-4 text-blue-800 text-4xl sm:text-5xl font-bold dark:text-gray-300'>
-          Hola, soy <span>Elmer</span>, desarrollador web
+        <h1 className='text-white/90 mb-4 text-5xl md:text-5xl xl:text-6xl font-extrabold text-pretty '>
+          Hola, soy <span className='text-gradient'>Elmer</span>, desarrollador
+          web
         </h1>
-        <p className='mb-8 text-slate-700 dark:text-gray-400 opacity-75'>
+        <p className='mb-8 text-white/70 md:text-sm xl:text-base font-extralight text-pretty'>
           Soy un apasionado del desarrollo web, un universo en constante
           evolución que me fascina. Disfruto cada línea de código como si fuera
           una pieza de un rompecabezas, buscando siempre la combinación perfecta
