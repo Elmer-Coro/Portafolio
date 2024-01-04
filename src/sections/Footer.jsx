@@ -20,7 +20,7 @@ export default function Footer() {
       <div className='column'>
         <h4 className='mb-8 text-xl font-extrabold text-white/80'>Personal</h4>
         <a
-          className='block mb-4 text-white/70 font-ligh'
+          className='block mb-4 text-white/70 font-light'
           href='https://elmer-coro.github.io/Blog/'>
           Blog
         </a>
