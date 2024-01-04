@@ -5,14 +5,14 @@ import Socials from "../components/Socials";
 export default function Footer() {
   return (
     <footer className='lg:grid-cols-5 md:grid-cols-2 text-white relative grid grid-cols-2 gap-8 max-w-[1200px] m-auto py-20 px-8 text-sm '>
-      <div className='column col-span-2'>
+      <div className='column md:col-span-1 lg:col-span-2'>
         <div className='max-w-[100px] mb-8 font-bold text-2xl'>
           <img
             src={logo}
             alt=''
           />
         </div>
-        <p className='mb-8 dark:text-gray-400'>
+        <p className='mb-8 text-white/70 font-light block '>
           Construyendo experiencias digitales excepcionales.
         </p>
         <Socials />
@@ -20,7 +20,7 @@ export default function Footer() {
       <div className='column'>
         <h4 className='mb-8 text-xl font-extrabold text-white/80'>Personal</h4>
         <a
-          className='block mb-4 dark:text-gray-400'
+          className='block mb-4 text-white/70 font-ligh'
           href='https://elmer-coro.github.io/Blog/'>
           Blog
         </a>
@@ -51,17 +51,17 @@ export default function Footer() {
       <div className='column'>
         <h4 className='mb-8 text-xl font-extrabold text-white/80'>Contacto</h4>
         <a
-          className='dark:text-gray-400 block mb-4 '
+          className='text-white/70 font-light  block mb-4 '
           href='#'>
           Linkedin
         </a>
         <a
-          className='dark:text-gray-400 block mb-4 '
+          className='text-white/70 font-light block mb-4  '
           href='#'>
           GitHub
         </a>
         <a
-          className='dark:text-gray-400 block mb-4 '
+          className='text-white/70 font-light block mb-4  '
           href='#'>
           Instagram
         </a>

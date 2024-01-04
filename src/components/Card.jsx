@@ -18,7 +18,7 @@ export default function Card({
       <div className='p-4'>
         <h2 className='text-white/80 text-xl font-extrabold mb-2'>{text}</h2>
         <p className='text-white/30 mb-4'>Html | Css | Javsscript</p>
-        <p className='text-white/70 font-light text-pretty text-sm mb-4'>
+        <p className='text-white/70 font-light text-pretty text-base mb-4'>
           {paragraph}
         </p>
         <img

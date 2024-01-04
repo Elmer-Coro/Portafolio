@@ -15,7 +15,7 @@ export default function Hero() {
           Hola, soy <span className='text-gradient'>Elmer</span>, desarrollador
           web
         </h1>
-        <p className='mb-8 text-white/70 md:text-sm xl:text-base font-extralight text-pretty'>
+        <p className='mb-8 text-white/70 md:text-base xl:text-base font-extralight text-pretty'>
           Soy un apasionado del desarrollo web, un universo en constante
           evolución que me fascina. Disfruto cada línea de código como si fuera
           una pieza de un rompecabezas, buscando siempre la combinación perfecta

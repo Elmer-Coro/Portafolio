@@ -30,7 +30,7 @@ export default function Skills() {
       <div className='grid place-items-center place-content-center gap-4 grid-cols-12 py-20 auto-rows-auto '>
         <Icon
           icon={<SvgGithub2 />}
-          sizes='col-span-2'
+          sizes='col-span-4 md:col-span-2'
         />
         <Icon
           icon={<SvgFigma />}
@@ -38,7 +38,7 @@ export default function Skills() {
         />
         <Icon
           icon={<SvgTailwind />}
-          sizes='col-span-2'
+          sizes='col-span-4 md:col-span-2'
         />
         <Icon
           icon={<SvgBootstrap />}
@@ -51,7 +51,7 @@ export default function Skills() {
         />
         <Icon
           icon={<SvgCss />}
-          sizes='col-span-2'
+          sizes='col-span-4  md:col-span-2'
         />
         <Icon
           icon={<SvgJavascript />}
@@ -59,12 +59,13 @@ export default function Skills() {
         />
         <Icon
           icon={<SvgNode />}
-          sizes='col-span-2'
+          sizes='col-span-4  md:col-span-2'
         />
         <Icon
           icon={<SvgReact />}
-          sizes='col-span-2'
+          sizes='col-span-4  md:col-span-2'
         />
+        {/*
         <Icon
           icon={<SvgReact />}
           sizes='col-span-4 '
@@ -77,6 +78,7 @@ export default function Skills() {
           icon={<SvgJavascript />}
           sizes='col-span-4'
         />
+        */}
       </div>
     </section>
   );
